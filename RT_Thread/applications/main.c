@@ -25,9 +25,10 @@ int main(void)
 
     rt_pin_mode(GRN_LED_PIN, PIN_MODE_OUTPUT);
     rt_pin_mode(USR_BTN_PIN, PIN_MODE_INPUT);
+    //can_test();
     while (count++)
     {
-        LOG_D("Hello RT-Thread!");
+        //LOG_D("Hello RT-Thread!");
         rt_pin_write(GRN_LED_PIN, PIN_LOW);
         rt_thread_mdelay(1000);
         rt_pin_write(GRN_LED_PIN, PIN_HIGH);
